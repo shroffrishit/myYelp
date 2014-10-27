@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="46" id="KGk-i7-Jjw" customClass="DistanceTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EcG-c4-V1p">
+                        <rect key="frame" x="8" y="8" width="42" height="29.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F2E-rc-hrY">
+                        <rect key="frame" x="263" y="6" width="51" height="31.5"/>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EcG-c4-V1p" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="4ID-H5-8Uf"/>
+                    <constraint firstAttribute="bottom" secondItem="F2E-rc-hrY" secondAttribute="bottom" constant="8" id="B8M-1I-d8X"/>
+                    <constraint firstAttribute="bottom" secondItem="F2E-rc-hrY" secondAttribute="bottom" constant="8" id="HKU-p7-zJ9"/>
+                    <constraint firstItem="F2E-rc-hrY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="K89-oR-V4O"/>
+                    <constraint firstAttribute="trailing" secondItem="F2E-rc-hrY" secondAttribute="trailing" constant="8" id="V0M-BT-rou"/>
+                    <constraint firstAttribute="bottom" secondItem="EcG-c4-V1p" secondAttribute="bottom" constant="8" id="k2j-II-Hgl"/>
+                    <constraint firstAttribute="bottom" secondItem="EcG-c4-V1p" secondAttribute="bottom" constant="8" id="wO8-XT-8Gp"/>
+                    <constraint firstItem="EcG-c4-V1p" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="y1n-fi-CbI"/>
+                    <constraint firstItem="F2E-rc-hrY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="EcG-c4-V1p" secondAttribute="trailing" constant="8" id="zC8-Iw-Mek"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="HKU-p7-zJ9"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="onOffSwitch" destination="F2E-rc-hrY" id="bxf-Rg-kb4"/>
+                <outlet property="title" destination="EcG-c4-V1p" id="5az-br-xOq"/>
+            </connections>
+            <point key="canvasLocation" x="176" y="272"/>
+        </tableViewCell>
+    </objects>
+</document>
